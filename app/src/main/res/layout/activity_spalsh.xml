@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="22dp"
         android:fontFamily="@font/byekan"
-        android:text="ارزستان (قیمت لحظه ای ارز سکه طلا و ارز دیجیتال)"
+        android:text="ارزستان (قیمت لحظه  ارز دیجیتال)"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
