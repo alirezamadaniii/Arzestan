@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.arzestan.view.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentTop"
+            app:destination="@id/fragmentTop" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentItemSelect"
+            app:destination="@id/fragmentItemSelect" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentLose"
+            app:destination="@id/fragmentLose" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMarket"
+        android:name="com.example.arzestan.view.FragmentMarket"
+        android:label="fragment_market"
+        tools:layout="@layout/fragment_market" >
+        <action
+            android:id="@+id/action_fragmentMarket_to_fragmentItemSelect"
+            app:destination="@id/fragmentItemSelect" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWatchList"
+        android:name="com.example.arzestan.view.FragmentWatchList"
+        android:label="fragment_watch_list"
+        tools:layout="@layout/fragment_watch_list" >
+        <action
+            android:id="@+id/action_fragmentWatchList_to_fragmentItemSelect"
+            app:destination="@id/fragmentItemSelect" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentItemSelect"
+        android:name="com.example.arzestan.view.FragmentItemSelect"
+        android:label="fragment_item_select"
+        tools:layout="@layout/fragment_item_select" />
+    <fragment
+        android:id="@+id/fragmentTop"
+        android:name="com.example.arzestan.view.FragmentTop"
+        android:label="fragment_top"
+        tools:layout="@layout/fragment_top" >
+        <action
+            android:id="@+id/action_fragmentTop_to_fragmentItemSelect"
+            app:destination="@id/fragmentItemSelect" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLose"
+        android:name="com.example.arzestan.view.FragmentLose"
+        android:label="fragment_lose"
+        tools:layout="@layout/fragment_lose" >
+        <action
+            android:id="@+id/action_fragmentLose_to_fragmentItemSelect"
+            app:destination="@id/fragmentItemSelect" />
+    </fragment>
+</navigation>
