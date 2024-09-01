@@ -57,8 +57,6 @@ public class GainLoseAdapter extends RecyclerView.Adapter<GainLoseAdapter.Holder
                 bundle.putString("change",holder.textViewChange.getText().toString());
 
                 Navigation.findNavController(v).navigate(R.id.action_fragmentMarket_to_fragmentItemSelect,bundle);
-
-
             }
         });
 
